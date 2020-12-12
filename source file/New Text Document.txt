@@ -1,0 +1,9 @@
+Random enemy spawns and movement
+Character
+Shoots the enemies
+Enemies die
+
+Need to implement: enemy spawn at different location in an enclosed (measured area, within the box level)
+These enemies will move around (force), when collide with anything, will re-random movement
+Need to implement shooting
+When these enemies die, will respawn from the pool
