@@ -9,6 +9,11 @@ TagManager:
   - tracking
   - spawner
   - volume
+  - Target
+  - Metal
+  - ExplosiveBarrel
+  - volSlider
+  - qualDropdown
   layers:
   - Default
   - TransparentFX
