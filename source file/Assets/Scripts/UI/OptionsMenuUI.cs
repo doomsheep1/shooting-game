@@ -13,6 +13,13 @@ public class OptionsMenuUI : MonoBehaviour
 
     void Start()
     {
+        LoadRes();
+        LoadQual();
+        LoadVol();
+    }
+
+    private void LoadRes ()
+    {
         if (PlayerPrefs.HasKey("res1") & PlayerPrefs.HasKey("res2"))
         {
             Screen.SetResolution(PlayerPrefs.GetInt("res1"), PlayerPrefs.GetInt("res2"), false);
@@ -33,7 +40,10 @@ public class OptionsMenuUI : MonoBehaviour
         {
             UnityEngine.Debug.Log("No key found for resolution");
         }
-        
+    }
+
+    private void LoadQual ()
+    {
         if (PlayerPrefs.HasKey("qual"))
         {
             QualitySettings.SetQualityLevel(PlayerPrefs.GetInt("qual"));
@@ -43,7 +53,10 @@ public class OptionsMenuUI : MonoBehaviour
         {
             UnityEngine.Debug.Log("No key found for quality");
         }
+    }
 
+    private void LoadVol ()
+    {
         if (PlayerPrefs.HasKey("vol"))
         {
             volumeSlider.value = PlayerPrefs.GetFloat("vol");
