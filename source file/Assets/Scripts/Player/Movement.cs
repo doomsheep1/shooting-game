@@ -6,9 +6,13 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     public CharacterController controller;
+    [SerializeField]
     private float speed = 8f;
+    [SerializeField]
     private float gravity = -6.81f;
+    [SerializeField]
     private float jumpHeight = 0.4f;
+    [SerializeField]
     private Vector3 velocity;
 
     void Update()
